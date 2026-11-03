@@ -1,15 +1,19 @@
-//hello world in c
+//playing with characters
 #include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
 
-int main() 
+int main()
 {
-	
+    char ch;
     char s[100];
-    scanf("%[^\n]%*c", &s);
-  	printf("Hello, World!\n");
-    printf("%s",s);
+    char sen[1000];
+
+    scanf("%c", &ch);
+    scanf("%s", s);
+    scanf(" %[^\n]", sen);
+
+    printf("%c\n", ch);
+    printf("%s\n", s);
+    printf("%s\n", sen);
+
     return 0;
 }
